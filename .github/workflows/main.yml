@@ -56,4 +56,4 @@ jobs:
         run: |
           helm upgrade --install myapp .helm/helloWeb3 \
             --namespace your-namespace \
-            --kubeconfig=$HOME/.kube/config
+            --kubeconfig=/home/nick17121990/.kube/
