@@ -47,4 +47,3 @@ jobs:
         ZONE_NAME: ${{ env.GKE_ZONE }}
       with:
         args: apply -f helm/helloWeb3/templates/
-		
