@@ -54,6 +54,6 @@ jobs:
 
       - name: Deploy Helm chart to GKE
         run: |
-          helm upgrade --install myapp .helm/helloWeb3 \
-            --namespace your-namespace \
+          helm upgrade --install vivekapp .helm/helloWeb3/Chart.yaml \
+            --namespace vivek-namespace \
             --kubeconfig=$HOME/.kube/config
