@@ -54,8 +54,6 @@ jobs:
 
       - name: Get GKE Credentials
         run: |
-          gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project vivek121
-
       - name: Deploy Helm chart to GKE
         run: |
           helm upgrade --install myapp ./helm/helloWeb3 \
